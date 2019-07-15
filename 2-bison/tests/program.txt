@@ -1,0 +1,64 @@
+program teste {
+{
+integer a, b_a2bcd3a, c[2], a_a2helloworld; // This is one line comment. you should ignore it
+bool t;
+float x[4];
+character e, f, g, h;
+}
+bool testone (integer abc, character b){
+	return false;
+}
+integer testtwo(){
+	return 12 * 3 / 2 % 4 - 6;
+}
+void testthree(float p){
+	float q;
+	q = p;
+	
+	if( q == p) then {
+		if( q > 0) then{
+			write(q);
+		}else {
+			read(p);
+			write(p+10);
+		};
+	};
+	while(q <= p){
+		break;
+	};
+	for(q=0; q < 100; q=q+1){
+		switch(q){
+			case 1:
+				write(q);
+			case 2:
+				read(q);
+			default:
+				;
+		};
+		continue;
+	};
+}
+void start(){
+	a = 10;
+	b_a2bcd3a = 0b10010101;
+	c[0] = 0xAb0129C;
+	t = true;
+	x[0] = 3.2;
+	x[1] = 0.4;
+	x[2] = 4.0e-2;
+	x[3] = 0.0;
+	
+	e = 'a';
+	f = '\\';
+	g = '\'';
+	h = '&';
+	
+	//testone( 4, e);
+	//a = testtwo();
+	callout("{0} = {1} + {2}", 1, 2, 3);
+	write("hello");
+	
+
+
+}
+}

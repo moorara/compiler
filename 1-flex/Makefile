@@ -1,16 +1,21 @@
-.PHONY: build
-build: lex.yy.c lexer
+CC = g++
+CFLAGS = -g -Wall -ansi -pedantic
+OBJS = lex.yy.o
+BIN = lexer
 
-.PHONY: lex.yy.c
-lex.yy.c:
+build: $(OBJS)
+	$(CC) $(CFLAGS) $(OBJS) -o $(BIN)
+
+lex.yy.o: lex.yy.c
+	$(CC) $(CFLAGS) -c lex.yy.c -o lex.yy.o
+
+lex.yy.c: lexer.l 
 	flex lexer.l
 
-.PHONY: lexer
-lexer:
-	g++ lex.yy.c -o lexer
-	rm lex.yy.c
+clean:
+	rm -f $(BIN) $(OBJS) lex.yy.c
 
 .PHONY: test
-test:
-	./lexer < testcase-1.txt
-	./lexer < testcase-2.txt
+test: $(BIN)
+	./lexer < tests/testcase-1.txt
+	./lexer < tests/testcase-2.txt

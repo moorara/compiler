@@ -1,0 +1,68 @@
+program 
+{ 
+} 
+integer 
+bool 
+float 
+character 
+b_a2bcd3a
+a_a2helloworld
+b_a2bcd3a
+,
+return false true
+* / + - %
+void 
+if()
+then
+else
+while()
+write
+read(q)
+break
+switch()
+case a:
+default:
+continue
+start
+= 
+b_a2bcd3a = 0b10010101
+c[] = 0xAAb0129C
+
+'a'
+'\\''\'''\"''\b''\t''\n''&'
+'£''^'')''(''-''+''=''¨''`''<''.'
+>= <= ! && & || | << >>
+
+callout("printf(\"%c %d\", " + "\'a\', {0});" , a);
+write("some text is here\t\n" +  
+	"some here too!!!" + " here again\"\'");
+
+"" + "abc" 	+"%\n@~#£$sadasd\\\b\t +kk"+ 
+"\'asdasd\"""this is another string"
+//ID section
+_a1asd2 
+abc_2 
+abcb_a2
+abcde_a23de
+2abc
+abc_a2a3ab
+abc_abc2de3
+abc_abc2def3
+a2bc_abc2defg3
+abc_abc2defgh3
+abc_abc2defghi3
+abc_abc2defghi3sdasd
+abc_abc2defg3a2abc3 abc_abc2defg3a2abc3uiyo7
+//Comment section
+%%%%%% abc
+%%%%%%%%%%%%
+// This is a one line comment. you shoud ignore it
+%%%
+This is a multiline comment. you should igonre it too.
+be carefull of % or %%
+%%%%%
+write("Here is not comment");
+%%%%
+This is a comment again. you should ignore it too.
+%% %
+%%%%

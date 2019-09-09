@@ -8,12 +8,6 @@ func setResult(l yyLexer, root *node) {
 }
 %}
 
-%union{
-  op    string
-  label string
-  node  *node
-}
-
 %token OPEN
 %token CLOSE
 %token <op> OP
@@ -25,6 +19,12 @@ func setResult(l yyLexer, root *node) {
 %left OP
 
 %start formula
+
+%union{
+  op    string
+  label string
+  node  *node
+}
 
 %%
 

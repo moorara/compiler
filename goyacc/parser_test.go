@@ -423,6 +423,7 @@ func TestParse(t *testing.T) {
 		t.Run(tc.name, func(t *testing.T) {
 			src := strings.NewReader(tc.formula)
 			ast, err := parse(tc.name, src)
+
 			assert.Equal(t, tc.expectedError, err)
 			assert.Equal(t, tc.expectedAST, ast)
 		})
